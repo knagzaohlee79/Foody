@@ -1,8 +1,10 @@
 package com.example.foody.View;
 
+import android.content.Intent;
 import android.content.pm.PackageInfo;
 import android.content.pm.PackageManager;
 import android.os.Bundle;
+import android.os.Handler;
 import android.widget.TextView;
 
 import androidx.activity.EdgeToEdge;
@@ -27,6 +29,14 @@ TextView txtVersion;
             try {
                 PackageInfo packageInfo = getPackageManager().getPackageInfo(getPackageName(),0);
                 txtVersion.setText("Version"+" "+packageInfo.versionName);
+                Handler handler = new Handler();
+                handler.postDelayed(new Runnable() {
+                    @Override
+                    public void run() {
+                        Intent intent = new Intent(SplashScreenActivity.this, LoginActivity.class);
+                        startActivity(intent);
+                    }
+                },2000);
             } catch (PackageManager.NameNotFoundException e) {
                 throw new RuntimeException(e);
             }
