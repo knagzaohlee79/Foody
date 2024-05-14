@@ -1,4 +1,16 @@
 <resources>
     <string name="app_name">Foody</string>
     <string name="title_activity_login">LoginActivity</string>
+    <string name="powerBy">Hoang Anh Le</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="loading">Loading</string>
+    <string name="login">Sign-in</string>
+    <string name="or">Or</string>
+    <string name="facebook_app_id">1173630527149123</string>
+    <string name="fb_login_protocol_scheme">fb1234</string>
+    <string name="facebook_client_token">dae0a739cb320d6c372b44586b97bda4</string>
+    <string name="googleLoggin">Sign-in with Google </string>
+    <string name="facebookLoggin">Sign-in With Facebook</string>
+    <string name="default_web_client_id">534868917695-v107bk2irupu8qhv3oe9l7o3gvbioott.apps.googleusercontent.com</string>
 </resources>

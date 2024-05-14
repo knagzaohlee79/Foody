@@ -12,6 +12,8 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Foody"
         tools:targetApi="31" >
+        <meta-data android:name="com.facebook.sdk.ApplicationId" android:value="@string/facebook_app_id"/>
+        <meta-data android:name="com.facebook.sdk.ClientToken" android:value="@string/facebook_client_token"/>
         <activity
             android:name=".View.LoginActivity"
             android:exported="false"
@@ -26,6 +28,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
     </application>
+    <uses-permission android:name="android.permission.INTERNET"/>
+
 
 </manifest>

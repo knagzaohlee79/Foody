@@ -3,4 +3,5 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="transparentLogin">#E6cd2027</color>
+    <color name="colorAccent">#FFFFFF</color>
 </resources>

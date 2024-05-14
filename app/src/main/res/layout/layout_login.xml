@@ -12,7 +12,7 @@
         android:layout_alignParentTop="true"
         android:background="@color/transparentLogin"
         android:orientation="vertical"
-        android:padding="50dp">
+        android:padding="105dp">
 
         <ImageView
             android:id="@+id/imageView"
@@ -23,28 +23,109 @@
             app:srcCompat="@drawable/foodytext" />
 
         <EditText
-            android:id="@+id/editTextText2"
+            android:id="@+id/edEmail"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
+            android:backgroundTint="@color/colorAccent"
+            android:drawableLeft="@drawable/ic_perm_identity_white_24dp"
+            android:drawablePadding="10dp"
             android:ems="10"
+            android:hint="@string/email"
             android:inputType="text"
-            android:text="Name" />
+            android:textColor="@color/colorAccent"
+            android:textColorHint="@color/colorAccent"
+            android:textColorLink="@color/colorAccent" />
 
         <EditText
-            android:id="@+id/editTextText3"
+            android:id="@+id/edPassword"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
+            android:backgroundTint="@color/colorAccent"
+            android:drawableLeft="@drawable/ic_lock_outline_white_24dp"
+            android:drawablePadding="10dp"
             android:ems="10"
-            android:inputType="text"
-            android:text="Name" />
+            android:hint="@string/password"
+            android:textColor="@color/colorAccent"
+            android:textColorHighlight="@color/black"
+            android:textColorHint="@color/colorAccent"
+            android:textColorLink="@color/colorAccent" />
 
         <Button
-            android:id="@+id/button"
+            android:id="@+id/btnLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="@color/colorAccent"
+            android:drawablePadding="10dp"
+            android:drawableTint="@color/transparentLogin"
+            android:fontFamily="sans-serif-black"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:text="@string/login"
+            android:textColor="@color/transparentLogin"
+            android:textColorHint="@color/colorAccent"
+            android:textColorLink="@color/colorAccent"
+            app:rippleColor="@color/colorAccent" />
+
+        <LinearLayout
+            android:id="@+id/padding"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
-            android:text="Button" />
+            android:orientation="horizontal">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:background="@color/colorAccent" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:text="@string/or"
+                android:textColor="@color/colorAccent" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_gravity="center"
+
+                android:layout_weight="1"
+                android:background="@color/colorAccent" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnGoogleSingin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="5dp"
+            android:backgroundTint="@color/colorAccent"
+            android:drawableLeft="@drawable/icon_google"
+            android:drawablePadding="5dp"
+            android:hint="@string/googleLoggin"
+            android:paddingLeft="5dp"
+            android:paddingTop="5dp"
+            android:textColorHint="@color/black" />
+
+
+        <com.facebook.login.widget.LoginButton
+            android:id="@+id/btnFacebookSignin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp"
+
+            app:com_facebook_login_text="@string/facebookLoggin" />
     </LinearLayout>
+
 </RelativeLayout>

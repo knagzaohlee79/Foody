@@ -31,9 +31,9 @@
         android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginEnd="194dp"
-        android:layout_marginBottom="4dp"
-        android:text="Hoang Anh Le"
+        android:layout_marginEnd="165dp"
+        android:layout_marginBottom="5dp"
+        android:text="@string/powerBy"
         android:textColor="#E8E0E0" />
 
     <LinearLayout
@@ -58,7 +58,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Loading"
+            android:text="@string/loading"
             android:textColor="#DDD2D2" />
     </LinearLayout>
 
