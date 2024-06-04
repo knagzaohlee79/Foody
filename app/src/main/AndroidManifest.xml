@@ -20,6 +20,11 @@
             android:label="@string/title_activity_login"
             android:theme="@style/Theme.Foody" />
         <activity
+            android:name=".View.RegisterActivity"
+            android:exported="false"
+            android:label="@string/title_activity_login"
+            android:theme="@style/Theme.Foody" />
+        <activity
             android:name=".View.HomePageActivity"
             android:exported="false"
             android:label="@string/title_activity_homepage"

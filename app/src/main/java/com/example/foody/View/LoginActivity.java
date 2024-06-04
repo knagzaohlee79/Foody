@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.preference.PreferenceManager;
 import android.view.View;
 import android.widget.Button;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
@@ -38,6 +39,7 @@ import com.google.firebase.auth.GoogleAuthProvider;
 public class LoginActivity extends AppCompatActivity implements OnConnectionFailedListener, View.OnClickListener, FirebaseAuth.AuthStateListener {
      Button btnGoogleSignin;
      LoginButton btnFacebookSignin;
+     TextView txtRegister;
     GoogleApiClient apiClient;
     public static final int REQUEST_CODE_GOOGLE = 3;
     public static final int REQUEST_CODE_FACEBOOK = 4;
@@ -51,6 +53,11 @@ public class LoginActivity extends AppCompatActivity implements OnConnectionFail
         FacebookSdk.sdkInitialize(getApplicationContext());
         setContentView(R.layout.layout_login);
         firebaseAuth = firebaseAuth.getInstance();
+        txtRegister = findViewById(R.id.txtRegister);
+        txtRegister.setOnClickListener(v -> {
+            Intent iRegister = new Intent(this, RegisterActivity.class);
+            startActivity(iRegister);
+        });
          callBackManager = CallbackManager.Factory.create();
 
         btnGoogleSignin = (Button) findViewById(R.id.btnGoogleSingin);

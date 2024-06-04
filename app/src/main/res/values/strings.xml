@@ -14,4 +14,19 @@
     <string name="googleLoggin">Sign-in with Google </string>
     <string name="facebookLoggin">Sign-in With Facebook</string>
     <string name="default_web_client_id">591916439037-vthomu05aam21d79p4m7slidrc6bfgeu.apps.googleusercontent.com</string>
+    <string name="forgotPassword">Forgot password?</string>
+    <string name="register">Register</string>
+    <string name="rePassword">Re-Password</string>
+    <string name="haveAccount">Already have an account?</string>
+    <string name="where">Where</string>
+    <string name="eatWhat">Eat What</string>
+    <string name="menu">Menu</string>
+    <string name="forgotpassword">Forgot password</string>
+    <string name="stringforgotpassword">Please enter your Email address in the box below to recover your password!</string>
+    <string name="sendEmail">Send Email</string>
+    <string name="stringRegister">You are not a member? Please Register for use!</string>
+    <string name="dangkymoi">
+<u>Đăng ký mới</u>
+</string>
+
 </resources>

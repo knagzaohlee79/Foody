@@ -2,6 +2,10 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="colorPrimaryDark">#cd2027</color>
+    <color name="colorBlack">#000</color>
     <color name="transparentLogin">#E6cd2027</color>
     <color name="colorAccent">#FFFFFF</color>
+    <color name="colorBackgroungHomepage">#CCC</color>
+    <color name="transparentBackgroundLogin">#33000000</color>
 </resources>
